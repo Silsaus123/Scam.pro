@@ -7,6 +7,7 @@ function App() {
             <h1>Jeg elsker ikke zesty men</h1>
             <NavBar/>
             <p>COmmMIOTIJPOTIJTPOIJGPOEIWJ</p>
+            <p>JEG FORSTÅR GIT!!!!</p>
         </>
     )
 }
