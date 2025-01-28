@@ -5,7 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 function ShoppingCart() {
     return (
         <>
-        <p className="shoppingcart">Shopping Cart <CiShoppingCart /> </p>
+        <p className="shoppingcart">Shop Cart <CiShoppingCart /> </p>
         </>
     )
 }

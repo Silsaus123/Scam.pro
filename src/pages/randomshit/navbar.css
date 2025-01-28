@@ -1,0 +1,14 @@
+.Nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 170px;
+    background-color: chartreuse;
+    padding: 25px 20px;
+    left: 85%;
+}
+
+.navLinks{
+    font-size: large;
+}
