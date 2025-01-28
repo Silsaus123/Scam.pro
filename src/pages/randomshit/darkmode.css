@@ -1,0 +1,17 @@
+body {
+    --color-background: #ffffff;
+    --color-foreground: #000000;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      --color-background: #1f2023; /* Dark mode background */
+      --color-foreground: #efefef; /* Dark mode text color */
+    }
+}
+
+body {
+background-color: var(--color-background); /* Applies to the entire page */
+}

@@ -1,12 +1,24 @@
-import * as React from "react"
-import { MdDarkMode } from "react-icons/md";
+import React, { useState } from "react";
+import Toggle from "react-toggle";
+import { useMediaQuery } from "react-responsive";
 
-function Darkmode() {
-    return(
-        <>
-        <p className="darkmode">Dark mode <MdDarkMode /></p>
-        </>
-    )
-}
+export const DarkModeToggle = () => {
+  const [isDark, setIsDark] = useState(true);
 
-export default Darkmode
+  const systemPrefersDark = useMediaQuery(
+    {
+      query: "(prefers-color-scheme: dark)",
+    },
+    undefined,
+    (isSystemDark) => setIsDark(isSystemDark)
+  );
+
+  return (
+    <Toggle
+      checked={isDark}
+      onChange={({ target }) => setIsDark(target.checked)}
+      icons={{ checked: "🌙", unchecked: "🔆" }}
+      aria-label="Dark mode toggle"
+    />
+  );
+};
