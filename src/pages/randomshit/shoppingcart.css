@@ -1,3 +1,19 @@
 .ShoppingCart {
     font-size: 200px;
 }
+
+.shoppingCartButton {
+    background-color: var(--body_color);
+    color: var(--body_background);
+    width: 50px;            
+    height: 50px;
+    border: none;  
+    border-radius: 50%;           
+    cursor: pointer;       
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+.shoppingCartButton:hover {
+    display: inline;
+    transform: scale(1.2);
+    background-color: var(--button_hover);
+}

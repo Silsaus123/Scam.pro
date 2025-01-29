@@ -4,9 +4,10 @@ import { CiSettings } from "react-icons/ci";
 
 function Settings() {
     return (
-        <>
-        <p className="settings">Settings <CiSettings /></p>
-        </>
+        <div className="shoppingCart">
+            <button className="settingsButton"><CiSettings size={25}/></button>
+            <p>Settings</p>
+        </div>
     )
 }
 
