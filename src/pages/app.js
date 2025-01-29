@@ -1,5 +1,7 @@
 import * as React from "react"
+import "./index.css"
 import "./app.css"
+
 
 import Header from "./randomshit/header"
 import NavBar from "./randomshit/navbar"
@@ -10,7 +12,7 @@ function App() {
         <>
         <Header/>
         <h1 className="headingApp">Browse our fine selection of goods: </h1>
-        <NavBar/>       
+        <NavBar/>      
         </>
     )
 }

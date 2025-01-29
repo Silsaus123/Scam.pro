@@ -1,17 +1,22 @@
-body {
-    --color-background: #ffffff;
-    --color-foreground: #000000;
-    background-color: var(--color-background);
-    color: var(--color-foreground);
+.darkmode {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-      --color-background: #1f2023; /* Dark mode background */
-      --color-foreground: #efefef; /* Dark mode text color */
-    }
+.dark_mode_button {
+    background-color: var(--body_color);
+    color: var(--body_background);
+    width: 50px;            
+    height: 50px;
+    border: none;  
+    border-radius: 50%;           
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
-body {
-background-color: var(--color-background); /* Applies to the entire page */
+.dark_mode_button:hover {
+    display: inline;
+    transform: scale(1.2);
+    background-color: var(--button_hover);
 }

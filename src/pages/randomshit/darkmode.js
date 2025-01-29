@@ -1,24 +1,43 @@
 import React, { useState } from "react";
-import Toggle from "react-toggle";
-import { useMediaQuery } from "react-responsive";
+import { CiLight } from "react-icons/ci";
+import { CiDark } from "react-icons/ci";
+import "./darkmode.css"
 
-export const DarkModeToggle = () => {
-  const [isDark, setIsDark] = useState(true);
 
-  const systemPrefersDark = useMediaQuery(
-    {
-      query: "(prefers-color-scheme: dark)",
-    },
-    undefined,
-    (isSystemDark) => setIsDark(isSystemDark)
-  );
+
+const DarkMode = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [mode, setMode] = useState("Dark");
+
+  const setDarkMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "dark")
+    setMode("Light")
+  }
+
+  const setLightMode = () => {
+    document.querySelector("body").setAttribute("data-theme", "light")
+    setMode("Dark")
+  }
+  
+  const toggleTheme = e => {
+    if (isDarkMode){
+      setLightMode()
+      setIsDarkMode(false)
+    } else {
+      setDarkMode()
+      setIsDarkMode(true)
+    }
+  }
 
   return (
-    <Toggle
-      checked={isDark}
-      onChange={({ target }) => setIsDark(target.checked)}
-      icons={{ checked: "🌙", unchecked: "🔆" }}
-      aria-label="Dark mode toggle"
-    />
+    <div className="darkMode">
+      <button className="dark_mode_button" onClick={toggleTheme}>
+        {isDarkMode ? <CiLight size={25}/> : <CiDark size={25}/>} 
+      </button>
+      <p>{mode}</p>
+    </div>
   );
-};
+  
+}
+
+export default DarkMode

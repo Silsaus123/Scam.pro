@@ -4,9 +4,10 @@ import { CiShoppingCart } from "react-icons/ci";
 
 function ShoppingCart() {
     return (
-        <>
-        <p className="shoppingcart">Shopping Cart <CiShoppingCart /> </p>
-        </>
+    <div className="shoppingCart">
+        <button className="shoppingCartButton"><CiShoppingCart size={25}/></button>
+        <p>Shopping Cart</p>
+    </div>        
     )
 }
 

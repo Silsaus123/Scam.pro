@@ -1,0 +1,15 @@
+:root {
+    --body_background: rgb(255, 255, 255);
+    --body_color: rgb(0, 0, 0);
+    --link_color: rgb(255, 0, 225);
+    --other_color: #a4c991;
+    --button_hover: rgb(37, 37, 37);
+}
+
+[data-theme="dark"] {
+    --body_background: rgb(0, 0, 0);
+    --body_color: rgb(255, 255, 255);
+    --link_color: rgb(111, 111, 11);
+    --other_color: #9900ff;
+    --button_hover: rgb(237, 237, 237);
+}
