@@ -1,20 +1,31 @@
 import * as React from "react"
-import Settings from "./settings"
-import Darkmode from "./darkmode"
-import ShoppingCart from "./shoppingcart"
 import "./navbar.css"
 
-function NavBar() {
-    return( 
-        <div className= "nav">
-            <ul >
-                <li>mmmmmm</li>
-                <li>aaaaa</li>
-                <li>ooooo</li>
+import Settings from "./settings"
+import DarkMode from "./darkmode"
+import ShoppingCart from "./shoppingcart"
+import Home from "./home"
+import ShoppingCartPage from "./shoppingCartPage"
+import MainPage from "../mainPage"
+
+
+function NavBar({ isShoppingCartPage}) {
+    return(
+        <div className= "Nav">
+            <ul className="navLinks">
+                <li><Settings/></li>
+                <li><DarkMode/></li> 
+
+                {!isShoppingCartPage && (
+                    <li><ShoppingCart/></li> 
+                )}
+
+                {isShoppingCartPage && (
+                    <li><Home/></li> 
+                )}
             </ul>
         </div>
     )
 }
 
 export default NavBar
-

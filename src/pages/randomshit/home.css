@@ -1,10 +1,4 @@
-.darkmode {
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-}
-
-.dark_mode_button {
+.mainPageButton{
     background-color: var(--body_color);
     color: var(--body_background);
     width: 50px;            
@@ -15,7 +9,7 @@
     transition: background-color 0.3s, transform 0.2s ease;
 }
 
-.dark_mode_button:hover {
+.mainPageButton:hover {
     display: inline;
     transform: scale(1.2);
     background-color: var(--button_hover);

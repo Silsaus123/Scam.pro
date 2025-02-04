@@ -1,16 +1,20 @@
 import * as React from "react"
+import "./index.css"
 import "./app.css"
+import MainPage from "./mainPage"
 
-import Header from "./randomshit/header"
-import NavBar from "./randomshit/navbar"
-import tshirt from "./randomshit/tshirt"
+import ShoppingCartPage from "./randomshit/shoppingCartPage";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
     return (
-        <>
-        <Header/>
-        <h1 className="headingApp">Browse our fine selection of goods: </h1>
-        <NavBar/>       
+        <> 
+        <HashRouter>
+            <Routes>
+                <Route path="/" element={<MainPage/>}/> 
+                <Route path="/shoppingCartPage" element={<ShoppingCartPage/>}/> 
+            </Routes>
+        </HashRouter>
         </>
     )
 }

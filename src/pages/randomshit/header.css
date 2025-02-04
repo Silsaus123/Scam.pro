@@ -1,5 +1,5 @@
 .header {
-    background-color: #a4c991;
+    background-color: var(--other_color);
     font-size: 50px;
     border: 2px solid black;
     border-radius: 10px;
@@ -8,4 +8,5 @@
     display: flex;
     justify-content: center;
     text-decoration: underline;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;}
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
