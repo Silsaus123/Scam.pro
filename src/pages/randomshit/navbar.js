@@ -4,23 +4,15 @@ import Darkmode from "./darkmode"
 import ShoppingCart from "./shoppingcart"
 import "./navbar.css"
 
-
-
 function NavBar() {
-    return(
-        <navbar className= "Nav">
-            <ul className="navLinks">
-                <li>
-                <Settings/>
-                </li>
-                <li>
-                <Darkmode/>
-                </li>
-                <li>
-                <ShoppingCart/>
-                </li>
+    return( 
+        <div className= "nav">
+            <ul >
+                <li>mmmmmm</li>
+                <li>aaaaa</li>
+                <li>ooooo</li>
             </ul>
-        </navbar>
+        </div>
     )
 }
 
