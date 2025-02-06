@@ -7,16 +7,16 @@ import "./darkmode.css"
 
 const DarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
-  const [mode, setMode] = useState("Dark");
+  const [mode, setMode] = useState("");
 
   const setDarkMode = () => {
     document.querySelector("body").setAttribute("data-theme", "dark")
-    setMode("Light")
+    setMode("")
   }
 
   const setLightMode = () => {
     document.querySelector("body").setAttribute("data-theme", "light")
-    setMode("Dark")
+    setMode("")
   }
   
   const toggleTheme = e => {

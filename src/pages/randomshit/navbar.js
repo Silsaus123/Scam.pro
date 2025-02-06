@@ -11,7 +11,7 @@ import MainPage from "../mainPage"
 
 function NavBar({ isShoppingCartPage}) {
     return(
-        <div className= "Nav">
+        <div className= "nav">
             <ul className="navLinks">
                 <li><Settings/></li>
                 <li><DarkMode/></li> 

@@ -6,7 +6,6 @@ function Settings() {
     return (
         <div className="shoppingCart">
             <button className="settingsButton"><CiSettings size={25}/></button>
-            <p>Settings</p>
         </div>
     )
 }

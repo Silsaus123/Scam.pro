@@ -1,32 +1,17 @@
 .nav{
   width: 15%;
   height: 100%;
-  background-color: red;
+  background-color: var(--other_color);
   position: fixed;
   right: 0;
   bottom: 1%;
-
-  /* position: fixed;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 170px;
-    background-color: var(--other_color);
-    padding: 25px 20px;
-    left: 85%; */
 }
-
-
-
 
 
 .nav:hover{
     animation-name: sidebaran;
     animation-duration: 4s;
 }
-
-
-
 
 
  @keyframes sidebaran {

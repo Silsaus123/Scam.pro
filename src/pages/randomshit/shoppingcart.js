@@ -14,7 +14,6 @@ function ShoppingCart() {
         <button className="Button">
             <CiShoppingCart size={25} onClick={onclickRoute}/>
         </button>
-        <p>Shopping Cart</p>
     </div>   
     )
 }
